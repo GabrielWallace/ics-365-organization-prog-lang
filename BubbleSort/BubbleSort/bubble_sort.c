@@ -7,6 +7,7 @@
 
 /*
 * Gets user input for the sorting order and the sequence of numbers to be sorted
+* 0 is used as a sentinel value to halt input of numbers and send the values to the bubble_sort method
 * Parameter: none
 */
 void set_sequence();
@@ -55,11 +56,11 @@ void set_sequence()
 	int num;
 	
 	/* Get the sorting order from user */
-	printf("Please enter the sort order(ascending/descending): ");
+	printf("Enter sort order: ");
 	scanf("%s", &sort_order);
 
 	/* Get the sequence of numbers to be sorted from the user */
-	printf("Please enter the numbers to be sorted: ");
+	printf("Enter a sequence of numbers: ");
 	for (int i = 0; i < size; i++)
 	{
 		scanf("%d", &num);
