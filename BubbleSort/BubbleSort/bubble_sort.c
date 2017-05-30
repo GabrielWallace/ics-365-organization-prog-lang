@@ -30,6 +30,10 @@ int sequence[50];
 int size = sizeof(sequence) / sizeof(sequence[0]);
 char sort_order[10];
 
+/* Begins the program calls set_sequence() and bubble_sort
+ * and prints the sorted numbers.
+ * Parameter: none
+ */
 int main()
 {
 	set_sequence();
